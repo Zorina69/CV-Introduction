@@ -1,0 +1,89 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a4-page {
+    width: 926px;
+    height: 428px;
+    background-image: url(LoginImage.jpg);
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20mm;
+    border: 1px solid #ddd;
+}
+.Username{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: absolute;
+    left: 463px;
+    top: 200px;
+}
+.Password{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    padding: 10px;
+    position: absolute;
+    left: 463px;
+    top: 250px;
+}
+.Login{
+    width: 104px;
+    height: 29px;
+    border-radius: 20px;
+    background-color: #ff00ae;
+    border: 1px solid #ff2bc3;
+    padding: 5px;
+    position: absolute;
+    left: 566px;
+    top: 300px;
+}
+iput{
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    border: 2px solid #2c4766;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #f0f0f0;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+input:focus{
+    border-color: #0ef;
+}
+label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s ease;
+}
+input:focus label{
+    top: 1px;
+    font-size: .8em;
+    background: #1f293a;
+    padding: 0 6px;
+    color: #0ef;
+}
