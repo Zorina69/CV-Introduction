@@ -6,87 +6,36 @@
     <title>SakuraGame</title>
     <style>
          
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    height: 100%;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.a4-page {
-    width: 926px;
-    height: 428px;
-    background-image: url(LoginImage.jpg);
-    background-size: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20mm;
-    border: 1px solid #ddd;
-}
-.Username{
-    width: 300px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    padding: 10px;
-    position: absolute;
-    left: 463px;
-    top: 200px;
-}
-.Password{
-    width: 300px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    padding: 10px;
-    position: absolute;
-    left: 463px;
-    top: 250px;
-}
-.Login{
-    width: 104px;
-    height: 29px;
-    border-radius: 20px;
-    background-color: #ff00ae;
-    border: 1px solid #ff2bc3;
-    padding: 5px;
-    position: absolute;
-    left: 566px;
-    top: 300px;
-}
-
     </style>
     <link rel="stylesheet" href="SakuraGame.css">
 </head>
 <body>
     <div class="a4-page">
-        <style>
-            body{font-family: 'Times New Roman'}
-            p{font-size:15px}
-        </style>
-        <p style="color: #ffffff; position: absolute; top:20px; right: 200px">This is a work of fiction. Any names, characters, stories or evens, are fictional.</p>
-        <p style="color: #ffffff; position: absolute; top:40px; right: 200px;">Current Version: 1.9.21.1010.4 Role: 405483537</p>
-        <div class="Username">
-            <p style="color:#000000; text-align: center;font-family:monospace">Username</p>
+        <p class="p-head"; style="size: 1px;">This is a work of fiction. Any names, characters, stories or evens, are fictional. <br> Current Version: 1.9.21.1010.4 Role: 405483537</p>
+        <div class="topic">
+            <p id="pTopic">Sakura Jorney</p>
         </div>
-        <div class="Password">
-            <p style="color:#000000; text-align: center;font-family:monospace">Password</p>
+        <div class="inputUsername">
+            <input type="text" placeholder="Enter Username" name="username" required>
+        </div>
+        <div class="inputPassword">
+            <input type="password" placeholder="Enter Password" name="password" required>
         </div>
         <div class="Login">
-            <p style="color:#ffffff; text-align: center;font-family:monospace">Log in</p>
+            <button>Log in</button>
         </div>
-        <p style="position: absolute; top:340px; left: 500px">Sign Up</p>
-        <p style="position: absolute; top:340px; left: 650px">Forgot Password</p>
-        <p style="position: absolute; top:370px; left: 460px; color:#ffffff"><b>By logging in, you are agreeing to the service policy.</b></p>
-        <p style="position: absolute; top:390px; left: 510px; color:#ffffff"><b><u style="color: blue;">Terms of Service</u> and <u style="color: blue;">Privacy Policy</u></b></p>
+        <div class="last">
+            <div class="sign">
+                <p id="signUp"><u>Sign Up</u> </p>
+                <p id="forgotPassword"><u>Forgot Password</u> </p>
+            </div>
+            <div class="privacy">
+                <p><b>By logging in, you are agreeing to the service policy.</b></p>
+                <p><b><u style="color:aqua;">Terms of Service</u> and <u style="color: aqua;">Privacy Policy</u></b></p>
+            </div>
+            
+            </div>
+       
 
     </div>
 </body>
